@@ -1,0 +1,98 @@
+/* seletor*/
+*{
+    margin: 0;
+}
+.tudo{
+    font-style: normal;
+    width: 100%;
+    background-color: #002B5B;
+}
+header{
+    position: fixed;
+    width: 100%;
+    background-color: #57C5B6;
+    border: 1px solid rgb(255, 255, 255);
+}
+#logo{
+    height: 80px;
+    margin-right: 25px;
+}
+#ulum{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    color: rgb(255, 255, 255);
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    font-size: 20px;
+}
+a{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px;
+    list-style-type: none; /*none- remover marcador*/
+    text-decoration: none; /*remove linha debaixo do texto*/
+    color: aliceblue;
+}
+a:hover{
+    color:#1A5F7A;
+}
+#areaServicos{
+    height: 470px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.box1{
+    width: 25%;
+    height: 250px;
+    border: 1px solid rgb(255, 255, 255);
+}
+#areaDuasCaixa{
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+#carroestrada{
+    height: 390px;
+    width: 100%;
+    
+}
+#caixaEsquerda{
+    height: 390px;
+    margin-bottom: 70px;
+    border: 1px solid black;
+}
+#caixaDireita{
+    color: aliceblue;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.box2{
+    width: 35%;
+    
+    border: 1px solid (255, 255, 255);
+}
+#adois{
+    color: aliceblue;
+}
+#adois:hover{
+    color:#57C5B6;
+}
+.partetres{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+#frenteoficina{
+    margin-top: 20px;
+    height: 450px;
+}
+#rodape{
+    background-color: #655DBB;
+    height: 350px;
+}
