@@ -2,28 +2,30 @@
 *{
     margin: 0;
 }
-body{
-    background-color: #97DEFF ;
-    width: 100%;
-}
 .tudo{
     font-style: normal;
     width: 100%;
+    background-color: #002B5B;
 }
 header{
-    height: 230px;
-    background-color: #62CDFF;
-    border: 1px solid black;
+    position: fixed;
+    width: 100%;
+    background-color: #57C5B6;
+    border: 1px solid rgb(255, 255, 255);
 }
 #logo{
-    margin-top: 5px;
-    text-align: center;
+    height: 80px;
+    margin-right: 25px;
 }
 #ulum{
-    margin-top: 20px;
-    color: #B1E1FF;
-    display: flex;/*posicionar elementos lado a lado*/
-    justify-content: center;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    color: rgb(255, 255, 255);
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    font-size: 20px;
 }
 a{
     font-size: 20px;
@@ -31,42 +33,63 @@ a{
     padding: 10px;
     list-style-type: none; /*none- remover marcador*/
     text-decoration: none; /*remove linha debaixo do texto*/
+    color: aliceblue;
 }
 a:hover{
-    color:#C9EEFF;
-    background-color: #AA77FF;
-    border-radius: 50px; /*arredondar borda*/
-    box-shadow: 1px 1px 3px black; /*sombra*/  
+    color:#1A5F7A;
 }
-#carroestrada{
-    height: 350px;
-    width: 100%;
-}
-#areaDuasCaixa{
+#areaServicos{
     height: 470px;
-    background-color: #655DBB;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-#caixaDireita{
-    background-color: #6b91e2;
-    font-size: 27px;
+.box1{
+    width: 25%;
+    height: 250px;
+    border: 1px solid rgb(255, 255, 255);
+    text-align: center;
+    justify-content: center;
+}
+.box1 img{
     text-align: center;
 }
-.box{
-    margin-top: 30px;
-    width: 35%;
-    height: 350px;
+#areaDuasCaixa{
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    
+}
+#carroestrada{
+    height: 390px;
+    width: 100%;
+    
+}
+#caixaEsquerda{
+    height: 390px;
+    margin-bottom: 70px;
     border: 1px solid black;
 }
-#adois{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 5px;
-    list-style-type: none; /*none- remover marcador*/
-    text-decoration: none; /*remove linha debaixo do texto*/
+#caixaDireita{
+    color: aliceblue;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 70px;
 }
-#partetres{
+.box2{
+    width: 35%;
+    
+    border: 1px solid (255, 255, 255);
+}
+#adois{
+    color: aliceblue;
+}
+#adois:hover{
+    color:#57C5B6;
+}
+.partetres{
     text-align: center;
     margin-top: 40px;
     margin-bottom: 30px;
@@ -78,4 +101,91 @@ a:hover{
 #rodape{
     background-color: #655DBB;
     height: 350px;
+}
+.slider{
+    margin: 0;
+    width: 800px;
+    height: 450px;
+    overflow: hidden;
+    margin-left: 25%;
+    
+}
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+    
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 25%;
+}
+.slide img{
+    width: 800px;
+}
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -10px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+
+}
+.manual-btn:not(:last-child){
+    margin-right: 20px;
+}
+.manual-btn:hover{
+    background-color: #fff;
+}
+#radio1:checked ~ .fisrt{
+    margin-left: 0;
+}
+#radio2:checked ~ .fisrt{
+    margin-left: -25%;
+}
+#radio3:checked ~ .fisrt{
+    margin-left: -50%;
+}
+#radio4:checked ~ .fisrt{
+    margin-left: -75%;
+}
+.navigation-auto div{
+    border: 2px solid#20a6ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+    margin-top: -40px;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 20px;
+    
+}
+#radio1:checked~.navigation-auto .auto-btn1{
+    background-color:  #fff;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color:  #fff;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color:  #fff;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color:  #fff;
 }
